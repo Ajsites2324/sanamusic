@@ -43,7 +43,7 @@ async def start_comm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgEAAx0Cc6rVEgACOZJkP6RTYIn8AAEZZbxEMhK9mDUbJMwAAtUDAAIwf_hF930Wek7X7AQvBA")
+            await message.reply_sticker("CAACAgUAAxkBAAEQulBkRoQTWaUt0SQpJOfiKaLwreTkMQACYQoAAsE-OFYCa4XxEuS8VC8E")
             return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"].format(config.SUPPORT_HEHE), reply_markup=keyboard
@@ -88,7 +88,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/INCRICIBLE) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/modern_elements) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -173,7 +173,7 @@ async def start_comm(client, message: Message, _):
                             text="• ʏᴏᴜᴛᴜʙᴇ •", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/INCRICIBLE"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url="https://t.me/Fuck_number"
                         ),
                     ],
                 ]
@@ -202,7 +202,7 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_sticker("CAACAgEAAx0Cc6rVEgACOYdkP6JIu-Dv7CAsFhYl70FqA0inmQAC2gIAAhplAAFGvX41SruPAxAvBA")
+                await message.reply_sticker("CAACAgEAAx0Cc6rVEgACOYdkP6JIu-CAACAgUAAxkBAAEQulBkRoQTWaUt0SQpJOfiKaLwreTkMQACYQoAAsE-OFYCa4XxEuS8VC8E")
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
